@@ -2,26 +2,72 @@
 @tailwind components;
 @tailwind utilities;
 
+/* Primary colors */
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  --primary-100: #E6F7FF;
+  --primary-200: #BAE3FF;
+  --primary-300: #7CC4FA;
+  --primary-400: #47A3F3;
+  --primary-500: #2186EB;
+  --primary-600: #0967D2;
+  --primary-700: #0552B5;
+  --primary-800: #03449E;
+  --primary-900: #01337D;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+/* Secondary colors */
+:root {
+  --secondary-100: #F1E2F3;
+  --secondary-200: #D9B8E8;
+  --secondary-300: #BB77D1;
+  --secondary-400: #9F3A8E;
+  --secondary-500: #85217A;
+  --secondary-600: #6A186E;
+  --secondary-700: #58145E;
+  --secondary-800: #48114A;
+  --secondary-900: #390E3C;
+}
+
+/* Accent colors */
+:root {
+  --yellow: #FFD700;
+  --green: #00FF00;
+  --red: #FF0000;
+  --blue: #0000FF;
+  --purple: #800080;
+  --pink: #FF1493;
+  --orange: #FFA500;
+}
+
+:root{
+  --background-color: hsl(216,28%,7%);
+ 
+  /* #0d1117  hsl(216,28%,7%)rgb(13,17,23) */
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background-color: var(--background-color);
+  
+}
+
+.container {
+  color : var(--primary-100);
+}
+
+
+/* styles.css */
+.progress-line {
+  position: fixed;
+  top: 0;
+  left: 50;
+  width: 5px;
+  height: 100%;
+  background: #e70404;
+  z-index: 999;
+}
+
+.progress {
+  height: 100%;
+  background: #ffee00;
+  transition: width 0.3s;
 }
