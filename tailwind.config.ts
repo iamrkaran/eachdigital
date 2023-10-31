@@ -8,10 +8,8 @@ const config: Config = {
   ],
   theme: {
     extend: {
-      // Custom font family
       fontFamily: {
-        sans: ['Inter', 'sans-serif'],
-        serif: ['Merriweather', 'serif'],
+        sans: [`var(--font-inter)`]
       },
       // Custom font size
       fontSize: {
@@ -23,7 +21,8 @@ const config: Config = {
       },
       colors: {
         //background
-        background: "#0d1117", 
+        background: "#ffffff", 
+        dark:'#0d1117',
         // Primary color
         primary: {
           100: '#E6F7FF',

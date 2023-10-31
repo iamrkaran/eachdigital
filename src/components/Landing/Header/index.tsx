@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 ">
+      <header className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#efefef]  backdrop-blur-md z-50 ">
         <div className="w-full h-full flex flex-row items-center justify-between m-auto ">
           <div className="container">
             <div className="relative  flex items-center justify-between">
@@ -131,7 +131,7 @@ const Header = () => {
                 <div className="flex items-center justify-end pr-16 lg:pr-0">
                   <Link
                     href="/signin"
-                    className="hidden py-3 px-7 text-base font-bold text-primary-100 hover:opacity-70  md:block"
+                    className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70  md:block"
                   >
                     Sign In
                   </Link>
