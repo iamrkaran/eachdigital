@@ -21,11 +21,11 @@ const config: Config = {
       },
       colors: {
         //background
-        background: "#ffffff", 
+        background: "#F1EDF2", 
         dark:'#0d1117',
         // Primary color
         primary: {
-          100: '#E6F7FF',
+          100: '#F1EDF2',
           200: '#BAE3FF',
           300: '#7CC4FA',
           400: '#47A3F3',
