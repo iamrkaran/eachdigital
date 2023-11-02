@@ -1,108 +1,53 @@
-"use client";
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
-import {
-  slideInFromLeft,
-  slideInFromRight,
-  slideInFromTop,
-} from "@/utils/motion";
 import Image from "next/image";
+import React from "react";
 
-type ExpansionPackCardProps = {
-  title: string;
-  description: string;
-  image: string;
-  index: number;
-};
-
-const ExpansionPackCard = ({
-  title,
-  description,
-  image,
-  index,
-}: ExpansionPackCardProps) => {
-  return (
-    <motion.div
-      key={index}
-      variants={index % 2 === 0 ? slideInFromLeft(0.5) : slideInFromRight(0.5)}
-      className="flex flex-col items-center  gap-4"
-    >
-      <div className="text-transparent  text-4xl font-bold text-left bg-clip-text bg-gradient-to-r from-secondary-500 to-primary-500">
-        <Image
-          src={image}
-          width={800}
-          height={300}
-          alt={title}
-          className="rounded-lg"
-        />
-      </div>
-      <motion.div
-        variants={slideInFromTop}
-        className="text-lg text-white font-bold mt-6 max-w-full w-auto h-auto"
-      >
-        {description}
-      </motion.div>
-    </motion.div>
-  );
-};
+const expansionPacks = [
+  {
+    title: "Pack 1",
+    description:
+      "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus congue.",
+    imageUrl: "/images/extra/1.png",
+  },
+  {
+    title: "Pack 2",
+    description:
+      "Sed gravida leo nec nisi efficitur, quis efficitur arcu facilisis. Aenean eget.",
+    imageUrl: "/images/extra/1.png",
+  },
+  {
+    title: "Pack 3",
+    description:
+      "Sed gravida leo nec nisi efficitur, quis efficitur arcu facilisis. Aenean eget.",
+    imageUrl: "/images/extra/1.png",
+  },
+];
 
 const ExpansionPacks = () => {
-  const ref = useRef(null);
-  const inView = useInView(ref);
-  const expansionPacks = [
-    {
-      title: "Customization",
-      description:
-        "Each allows users to create unique and extraordinary profiles with customizable features and cyberpunk-inspired design elements.",
-      image: "/images/extra/1.png",
-    },
-    {
-      title: "Personalization",
-      description:
-        "Make your profile truly yours with a wide range of personalization options. Customize your layout, themes, and more.",
-      image: "/images/extra/2.png",
-    },
-    {
-      title: "Security",
-      description:
-        "We prioritize your security. Each's advanced security features keep your data safe in the cyberpunk world.",
-      image: "/images/extra/3.png",
-    },
-    {
-      title: "Customization",
-      description:
-        "Each allows users to create unique and extraordinary profiles with customizable features and cyberpunk-inspired design elements.",
-      image: "/images/extra/1.png",
-    },
-  ];
-
   return (
-    <motion.div
-      ref={ref}
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"}
-      className="flex flex-row items-center justify-center mt-32 w-full z-[20] container"
-    >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
-        <motion.div
-          variants={slideInFromTop}
-          className="text-transparent text-4xl font-bold text-left bg-clip-text bg-gradient-to-r from-secondary-500 to-primary-500"
-        >
-          Expansion Packs
-        </motion.div>
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
-          {expansionPacks.map((item, index) => (
-            <ExpansionPackCard
-              key={index}
-              title={item.title}
-              description={item.description}
-              image={item.image}
-              index={index}
-            />
+    <section className="bg-primary-100 py-16">
+      <div className="container mx-auto">
+        <h2 className="text-4xl font-extrabold mb-8">Expansion Packs</h2>
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+          {expansionPacks.map((pack, index) => (
+            <div key={index} className="flex items-center">
+              <div className="md:order-2">
+                <Image
+                  width={500}
+                  height={500}
+                  src={pack.imageUrl}
+                  alt={pack.title}
+                  className="w-64 h-64 rounded-lg object-cover"
+                />
+              </div>
+              <div className="md:order-1">
+                <h3 className="text-2xl font-semibold mb-2">{pack.title}</h3>
+                <p className="text-gray-600">{pack.description}</p>
+              </div>
+            </div>
           ))}
         </div>
       </div>
-    </motion.div>
+    </section>
   );
 };
 

@@ -1,36 +1,25 @@
-"use client"
 import React from "react";
-import { motion } from "framer-motion";
-import {
-  slideInFromLeft,
-  slideInFromTop,
-} from "@/utils/motion";
 
-const GettheContentyouNeed = () => {
+const GetTheContentYouNeed = () => {
   return (
-    <motion.div
-      initial="hidden"
-      animate="visible"
-      className="flex flex-row items-center justify-center mt-20 w-full z-[20] container"
-    >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
-        <motion.div
-          variants={slideInFromTop}
-          className="text-transparent font-bold text-left text-4xl  bg-clip-text bg-gradient-to-r from-secondary-500 to-primary-500"
-        >
-          ExpansionPacks
-        </motion.div>
-        <motion.div
-          variants={slideInFromLeft(0.5)}
-          className="text-lg text-white font-bold mt-6 max-w-full w-auto h-auto"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </motion.div>
-        {/* Add more notes here if needed */}
+    <section className="bg-primary-100 py-16">
+      <div className="container mx-auto">
+        <h2 className="text-4xl font-extrabold mb-8">Get the Content You Need</h2>
+        <div className="flex flex-col md:flex-row">
+          <div className="md:w-1/2 pr-8">
+            <p className="text-lg text-gray-600">
+              Discover a vast library of content that suits your interests.
+              Whether its the latest tech updates, creative design inspiration,
+              or exciting social discussions, we have got you covered.
+            </p>
+          </div>
+          <div className="md:w-1/2">
+            {/* You can include an image here if needed */}
+          </div>
+        </div>
       </div>
-    </motion.div>
+    </section>
   );
 };
 
-export default GettheContentyouNeed;
-
+export default GetTheContentYouNeed;

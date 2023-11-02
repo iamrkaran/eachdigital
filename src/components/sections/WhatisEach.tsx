@@ -1,53 +1,27 @@
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
-import { slideInFromLeft } from "@/utils/motion";
+import React from "react";
 
-
-const sectionContent = [
-  {
-    title: "What is Each?",
-    description: "Experience the Cyberpunk Revolution",
-  },
-  {
-    title: "Notes",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-  {
-    title: "Extraordinary Profiles",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  },
-];
-
-const WhatisEach = () => {
-  const ref = useRef(null);
-  const inView = useInView(ref); 
-
+const WhatIsEach = () => {
   return (
-    <motion.div 
-      ref={ref} 
-      initial="hidden"
-      animate={inView ? "visible" : "hidden"} 
-      variants={slideInFromLeft(0.5)}
-      className="container mx-auto mt-32"
-    >
-      <div className="flex flex-col gap-5 text-start">
-        <div className="flex flex-row items-center gap-2">
-          <span className="text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-secondary-500 to-primary-500">
-            What is Each?
-          </span>
-        </div>
-
-        {sectionContent.map((section, index) => (
-          <div
-            key={index}
-            className="text-lg font-bold text-white max-w-full"
-          >
-            {section.description}
-          </div>
-        ))}
+    <section className="bg-primary-100 text-gray-800 py-16">
+      <div className="container mx-auto text-center">
+        <h2 className="text-4xl font-extrabold mb-4">What is Each?</h2>
+        <p className="text-lg mb-8">
+          Each is a next-generation social media platform that lets you connect
+          with friends, explore futuristic cityscapes, and experience a new era
+          of social networking. Here&apos;s what makes Each stand out:{" "}
+        </p>
+        <ul className="text-left list-disc">
+          <li className="mb-2">
+            Immerse yourself in a cyberpunk-inspired digital world.
+          </li>
+          <li className="mb-2">Connect with friends and loved ones.</li>
+          <li className="mb-2">Explore cutting-edge technologies.</li>
+          <li className="mb-2">Discover new communities and experiences.</li>
+          <li className="mb-2">Join us today and be part of the future!</li>
+        </ul>
       </div>
-    </motion.div>
+    </section>
   );
 };
 
-export default WhatisEach;
+export default WhatIsEach;

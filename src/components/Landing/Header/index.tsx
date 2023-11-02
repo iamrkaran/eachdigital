@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#efefef]  backdrop-blur-md z-50 ">
+      <header className="bg-primary-100 w-full h-[65px] fixed top-0   backdrop-blur-md z-50 ">
         <div className="w-full h-full flex flex-row items-center justify-between m-auto ">
           <div className="container">
             <div className="relative  flex items-center justify-between">
@@ -63,17 +63,17 @@ const Header = () => {
                     className="absolute right-4 top-1/2 block translate-y-[-50%] rounded-lg px-3 py-[6px] ring-primary focus:ring-2 lg:hidden"
                   >
                     <span
-                      className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                      className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300  ${
                         navbarOpen ? " top-[7px] rotate-45" : " "
                       }`}
                     />
                     <span
-                      className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                      className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300  ${
                         navbarOpen ? "opacity-0 " : " "
                       }`}
                     />
                     <span
-                      className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300 dark:bg-white ${
+                      className={`relative my-1.5 block h-0.5 w-[30px] bg-black transition-all duration-300  ${
                         navbarOpen ? " top-[-8px] -rotate-45" : " "
                       }`}
                     />
@@ -117,7 +117,7 @@ const Header = () => {
                                 </span>
                               </a>
                               <div
-                                className={`submenu relative top-full left-0 rounded-md bg-white transition-[top] duration-300 group-hover:opacity-100 dark:bg-dark lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
+                                className={`submenu relative top-full left-0 rounded-md bg-dark transition-[top] duration-300 group-hover:opacity-100  lg:invisible lg:absolute lg:top-[110%] lg:block lg:w-[250px] lg:p-4 lg:opacity-0 lg:shadow-lg lg:group-hover:visible lg:group-hover:top-full ${
                                   openIndex === index ? "block" : "hidden"
                                 }`}
                               ></div>
@@ -138,12 +138,12 @@ const Header = () => {
                   
                   <Link
                     href="/signup"
-                    className="p-2 bg-gradient-to-r from-secondary-500 to-primary-500 text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+                    className="hidden p-2 bg-gradient-to-r from-secondary-500 to-primary-500 text-center text-white cursor-pointer rounded-lg max-w-[200px] md:block"
                   >
                     Sign Up
                   </Link>
 
-                  <div></div>
+                
                 </div>
               </div>
             </div>

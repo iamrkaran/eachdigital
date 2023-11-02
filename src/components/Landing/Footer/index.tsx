@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <>
       <footer
-        className="wow fadeInUp relative z-10 bg-primary bg-opacity-5 pt-16 md:pt-20 lg:pt-24"
+        className=" bg-primary-100 wow fadeInUp relative z-10  pt-16 md:pt-20 lg:pt-24"
         data-wow-delay=".1s"
       >
         <div className="container">
@@ -21,14 +21,12 @@ const Footer = () => {
                     height={30}
                   />
                 </Link>
-                <p className="mb-9 text-base font-medium leading-relaxed text-gray-300">
-                 Each Digital is a next generation social media platform that allows users to create, share and monetize their content.
-                </p>
+               
                 <div className="flex items-center">
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    className="mr-6 text-dark-[#CED3F6] hover:text-dark-primary"
                   >
                     <svg
                       width="9"
@@ -42,7 +40,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    className="mr-6 text-dark-[#CED3F6] hover:text-dark-primary"
                   >
                     <svg
                       width="19"
@@ -56,7 +54,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    className="mr-6 text-dark-[#CED3F6] hover:text-dark-primary"
                   >
                     <svg
                       width="18"
@@ -70,7 +68,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-[#CED3F6] hover:text-primary"
+                    className="mr-6 text-dark-[#CED3F6] hover:text-dark-primary"
                   >
                     <svg
                       width="17"
@@ -87,14 +85,14 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold  text-white">
+                <h2 className="mb-10 text-dark-xl font-bold  text-dark">
                   Useful Links
                 </h2>
                 <ul>
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-gray-300 hover:text-primary"
+                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
                     >
                       {" "}
                       Blog{" "}
@@ -103,7 +101,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-gray-300 hover:text-primary"
+                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
                     >
                       {" "}
                       Pricing{" "}
@@ -112,7 +110,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-gray-300 hover:text-primary"
+                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
                     >
                       {" "}
                       About{" "}
@@ -124,14 +122,14 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold  text-white">
+                <h2 className="mb-10 text-dark-xl font-bold  text-dark">
                   Terms
                 </h2>
                 <ul>
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-gray-300 hover:text-primary"
+                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
                     >
                       {" "}
                       TOS{" "}
@@ -140,7 +138,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-gray-300 hover:text-primary"
+                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
                     >
                       {" "}
                       Privacy Policy{" "}
@@ -149,7 +147,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-gray-300 hover:text-primary"
+                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
                     >
                       {" "}
                       Refund Policy{" "}
@@ -161,14 +159,14 @@ const Footer = () => {
 
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-xl font-bold  text-white">
+                <h2 className="mb-10 text-dark-xl font-bold  text-dark">
                   Support & Help
                 </h2>
                 <ul>
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-gray-300 hover:text-primary"
+                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
                     >
                       {" "}
                       Open Support Ticket{" "}
@@ -177,7 +175,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-gray-300 hover:text-primary"
+                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
                     >
                       {" "}
                       Terms of Use{" "}
@@ -186,7 +184,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-base font-medium text-gray-300 hover:text-primary"
+                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
                     >
                       {" "}
                       About{" "}
@@ -199,7 +197,7 @@ const Footer = () => {
         </div>
         <div className="bg-primary/10 py-8">
           <div className="container">
-            <p className="text-center text-base text-gray-300 ">
+            <p className="text-center text-dark-base text-dark-gray-300 ">
               © {new Date().getFullYear()} Each Digital. All Rights
               Reserved.
             </p>

@@ -1,37 +1,30 @@
-"use client";
-import React, { useRef } from "react";
-import { motion, useInView } from "framer-motion";
-import {
-  slideInFromLeft,
-  slideInFromTop,
-} from "@/utils/motion";
+import Image from "next/image";
+import React from "react";
 
 const Notes = () => {
-  const ref = useRef(null);
-  const inView = useInView(ref);
   return (
-    <motion.div
-    ref={ref} 
-    initial="hidden"
-    animate={inView ? "visible" : "hidden"} 
-      className="flex flex-row items-center justify-center mt-20 w-full z-[20] container"
-    >
-      <div className="h-full w-full flex flex-col gap-5 justify-center m-auto text-start">
-        <motion.div
-          variants={slideInFromTop}
-          className="text-transparent text-4xl font-bold text-left bg-clip-text bg-gradient-to-r from-secondary-500 to-primary-500"
-        >
-          Notes
-        </motion.div>
-        <motion.div
-          variants={slideInFromLeft(0.5)}
-          className="text-lg text-white font-bold mt-6 max-w-full w-auto h-auto"
-        >
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-        </motion.div>
-        {/* Add more notes here if needed */}
-      </div> 
-    </motion.div>
+    <section className="bg-primary-100 py-16">
+      <div className="container mx-auto flex flex-col items-center">
+        <div className="w-64 h-64 rounded-full overflow-hidden mb-8">
+          <Image
+            width={500}
+            height={500}
+            src="/images/tablet.each.png" // Replace with the image file path
+            alt="Notes Image"
+            className="w-full h-full object-cover"
+          />
+        </div>
+        <h2 className="text-4xl font-extrabold mb-4">Notes Section</h2>
+        <p className="text-lg mb-8 text-center">
+          This is where you can find our latest updates and important notes.
+        </p>
+        <ul className="text-left list-disc">
+          <li className="mb-2">Stay tuned for exciting announcements.</li>
+          <li className="mb-2">Get insights and tips for using our platform.</li>
+          <li className="mb-2">Join discussions and share your thoughts.</li>
+        </ul>
+      </div>
+    </section>
   );
 };
 

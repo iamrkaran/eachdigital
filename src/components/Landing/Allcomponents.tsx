@@ -24,35 +24,43 @@ import AServicePlatform from "../sections/AServicePlatform";
 import CyberPunks from "../sections/CyberPunks";
 import EachforBusiness from "../sections/EachforBusiness";
 import EachforKids from "../sections/EachforKids";
+import ItsMoreThenYouThink from "../sections/ItsMoreThen";
 
 const AllComponents = () => {
   return (
     <div>
       <WhatisEach />
-      <Notes />
+      <ItsMoreThenYouThink />
+
       <ExtraordinaryProfiles />
+      <Notes />
+
       <ExpansionPacks />
+
       <ControlyourTimeline />
       <GettheContentyouNeed />
 
-    
-
       <ChatBoxes />
       <Visions />
+
       <Videos />
       <Points />
+
       <Showyourstyle />
       <Stickers />
+
       <Rewards />
       <Requests />
+
       <Adventures />
       <AlgorithmPower />
+
       <Data />
       <Performances />
+
       <Games />
       <AServicePlatform />
-      <CyberPunks />
-      <EachforBusiness />
+
       <EachforKids />
       <EachforBusiness />
     </div>

@@ -2,17 +2,18 @@ import React from "react";
 import HeroContent from "./HeroContent";
 
 const Hero = () => {
-  return (
-    <div className="relative flex flex-col h-full w-full" >
-      {/* <video
-        autoPlay
-        muted
-        loop
-        className="rotate-180 absolute top-[-340px]  h-full w-full left-0 z-[1] object-cover "
-      >
-        <source src="/blackhole.webm" type="video/webm" />
-      </video> */}
-      <HeroContent />
+  const digitalContent = {
+    title: "Welcome To Each",
+    description:
+      "Join our next-generation social media platform and immerse yourself in a cyberpunk-inspired digital world. Connect with friends, explore futuristic cityscapes, and experience a new era of social networking.",
+  };
+
+  return ( 
+    <div
+      className="w-full h-screen bg-cover bg-center"
+      style={{ backgroundImage: "url(/background/Interstellar-25s-1768px.svg)" }}
+    >
+      <HeroContent title={digitalContent.title} description={digitalContent.description} />
     </div>
   );
 };
