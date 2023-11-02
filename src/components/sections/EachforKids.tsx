@@ -5,7 +5,7 @@ const EachforKidsPage: React.FC = () => {
   return (
     <div className="bg-primary-100 min-h-screen p-4">
       <header className="bg-blue-500 text-white py-4 text-center">
-        <h1 className="text-4xl text-dark font-bold">Welcome to EachforKids</h1>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">Welcome to EachforKids</h2>
       </header>
 
       <main className="mt-8 max-w-4xl mx-auto p-4 bg-white rounded shadow-lg">

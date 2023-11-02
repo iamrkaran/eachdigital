@@ -5,7 +5,7 @@ const Visions = () => {
   return (
     <section className="bg-primary-100 py-16">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-extrabold mb-8">Our Visions</h2>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">Our Visions</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           <div className="bg-white rounded-lg shadow-md">
             <Image
