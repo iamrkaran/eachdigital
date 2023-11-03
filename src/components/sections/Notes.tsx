@@ -14,7 +14,7 @@ const Notes = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <h2 className="text-4xl font-extrabold mb-4">Notes Section</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">Each It</h2>
         <p className="text-lg mb-8 text-center">
           This is where you can find our latest updates and important notes.
         </p>

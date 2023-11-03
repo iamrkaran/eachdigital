@@ -4,7 +4,7 @@ const GetTheContentYouNeed = () => {
   return (
     <section className="bg-primary-100 py-16">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-extrabold mb-8">Get the Content You Need</h2>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">Get the Content You Need</h2>
         <div className="flex flex-col md:flex-row">
           <div className="md:w-1/2 pr-8">
             <p className="text-lg text-gray-600">

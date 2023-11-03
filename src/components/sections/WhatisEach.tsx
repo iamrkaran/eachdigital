@@ -4,7 +4,8 @@ const WhatIsEach = () => {
   return (
     <section className="bg-primary-100 text-gray-800 py-16">
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-extrabold mb-4">What is Each?</h2>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">What is Each?</h2>
+
         <p className="text-lg mb-8">
           Each is a next-generation social media platform that lets you connect
           with friends, explore futuristic cityscapes, and experience a new era

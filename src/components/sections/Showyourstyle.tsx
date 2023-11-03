@@ -4,7 +4,7 @@ const ShowYourStyle = () => {
   return (
     <section className="bg-primary-100 py-16">
       <div className="container mx-auto">
-        <h2 className="text-4xl font-extrabold mb-8">Show Your Style</h2>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">Show Your Style</h2>
         <p className="text-lg text-gray-600 mb-8">
           Express yourself and showcase your unique style on our platform. Here are some ways to do it:
         </p>
