@@ -3,6 +3,7 @@ import AllComponents from "@/components/(landing)/Allcomponents";
 import Hero from "@/components/(landing)/Hero";
 import LandingLayout from "@/components/(landing)/layout";
 
+
 export default function Home() {
   // Assuming isLoggedIn is a boolean variable
   const isLoggedIn = false;
