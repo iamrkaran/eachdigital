@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-primary-100 w-full h-[65px] fixed top-0   backdrop-blur-md z-50 ">
+      <header className="bg-contrast w-full h-[65px] fixed top-0 backdrop-blur-md z-50">
         <div className="w-full h-full flex flex-row items-center justify-between m-auto ">
           <div className="container">
             <div className="relative  flex items-center justify-between">
@@ -46,7 +46,7 @@ const Header = () => {
                   className="h-auto w-auto flex flex-row items-center"
                 >
                   <Image
-                    src="/images/logo/logo.png"
+                    src="/images/logo/eachVerticalBlack.png"
                     alt="logo"
                     width={70}
                     height={70}

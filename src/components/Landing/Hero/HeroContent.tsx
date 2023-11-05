@@ -66,9 +66,9 @@ type Props = {
 const HeroContent = (props: Props) => {
 	return (
 		<div>
-			<section className="flex justify-center items-center mt-16">
-				<div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-					<a
+			<section className="flex justify-center items-center mt-16 h-screen">
+				<div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12 ">
+					{/* <a
 						href="#"
 						className="inline-flex justify-between items-center py-1 px-1 pr-4 mb-7 text-sm text-gray-700 bg-gray-100 rounded-full dark:bg-gray-800 dark:text-white hover:bg-gray-200 dark:hover:bg-gray-700"
 						role="alert"
@@ -91,13 +91,10 @@ const HeroContent = (props: Props) => {
 								clipRule="evenodd"
 							></path>
 						</svg>
-					</a>
+					</a> */}
 					<h1 className="mb-4 text-4xl xl:text-8xl sm:text-3xl font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl text-primary-100">
 						{props.title}
 					</h1>
-					<p className="mb-8 text-lg font-normal text-primary-100/70 lg:text-xl sm:px-16 xl:px-48 ">
-						{props.description}
-					</p>
 					<div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
 						<a
 							href="#"
@@ -131,9 +128,9 @@ const HeroContent = (props: Props) => {
 									<path
 										d="M7 10L12 15L17 10"
 										stroke="#ffffff"
-										stroke-width="1.5"
-										stroke-linecap="round"
-										stroke-linejoin="round"
+										strokeWidth="1.5"
+										strokeLinecap="round"
+										strokeLinejoin="round"
 									></path>
 							</svg>
 							{/* <svg
