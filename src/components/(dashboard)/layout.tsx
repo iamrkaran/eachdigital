@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   description: "Each Digital is a Social Media Network for the Future",
 };
 
-export default function DefaultLayout({
+export default function DashboardLayout({
   children,
 }: {
   children: React.ReactNode;
