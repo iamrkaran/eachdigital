@@ -1,8 +1,8 @@
+import DashMain from "@/components/(dashboard)/dashMain";
 import DashboardLayout from "@/components/(dashboard)/layout";
 import AllComponents from "@/components/(landing)/Allcomponents";
 import Hero from "@/components/(landing)/Hero";
 import LandingLayout from "@/components/(landing)/layout";
-
 
 export default function Home() {
   // Assuming isLoggedIn is a boolean variable
@@ -13,9 +13,7 @@ export default function Home() {
       {isLoggedIn ? (
         <DashboardLayout>
           {/* Content for authenticated users (dashboard) */}
-          <div>
-            <p>Welcome to your dashboard!</p>
-          </div>
+          <DashMain />
         </DashboardLayout>
       ) : (
         <LandingLayout>
