@@ -17,22 +17,40 @@ const profiles = [
     imageUrl: "/images/profile/5.png",
   },
   {
-    imageUrl:"/images/profile/6.png",
-  }
+    imageUrl: "/images/profile/6.png",
+  },
 ];
 
-const videoUrl = "/videos/extraordinary.mp4"; // Add the URL to your video here
+const videoUrl = "/videos/extraordinary.mp4";
 const imageWidth = 450;
 const imageHeight = 800;
 
 const ExtraordinaryProfiles = () => {
   return (
     <section className="bg-primary-100 py-16">
+      <style>
+        {`
+          .responsive-div {
+            max-width: 900px;
+            width: 100%;
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            margin: 50px auto;
+          }
+
+          .responsive-video {
+            width: 100%;
+            height: auto;
+          }
+        `}
+      </style>
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-extrabold mb-8">Extraordinary Profiles</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {profiles.map((profile, index) => (
-            <div key={index} >
+            <div key={index}>
               <img
                 src={profile.imageUrl}
                 alt="profile"
@@ -47,21 +65,10 @@ const ExtraordinaryProfiles = () => {
             </div>
           ))}
         </div>
-        <div className="bg-white rounded-lg shadow-md"
-          style={{
-            width:"900px",
-            height:"550px",
-            padding:"16px",
-            display:"flex",
-            flexDirection:"column",
-            justifyContent:"center",
-            margin: "50px auto",
-          }}
-        >
+        <div className="bg-white rounded-lg shadow-md responsive-div">
           <video
             controls
-            width="100%"
-            height="auto"
+            className="responsive-video"
             src={videoUrl}
           >
             Your browser does not support the video tag.

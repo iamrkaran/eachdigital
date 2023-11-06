@@ -1,0 +1,57 @@
+/* Make the section container responsive */
+
+.section-container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  /* Media queries to adjust the grid layout and image width and height depending on the screen size */
+  
+  @media (max-width: 768px) {
+    .grid {
+      grid-template-columns: 1fr;
+    }
+  
+    img {
+      width: 100% !important;
+      height: auto !important;
+    }
+  }
+  
+  @media (min-width: 768px) and (max-width: 1280px) {
+    .grid {
+      grid-template-columns: 2fr;
+    }
+  
+    img {
+      width: 50% !important;
+      height: auto !important;
+    }
+  }
+  
+  @media (min-width: 1280px) {
+    .grid {
+      grid-template-columns: 3fr;
+    }
+  
+    img {
+      width: 33.33% !important;
+      height: auto !important;
+    }
+  }
+  
+  /* CSS flexbox layout for the video container */
+  
+  .video-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  video {
+    width: 100%;
+    height: auto;
+  }
+  
