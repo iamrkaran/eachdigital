@@ -1,4 +1,5 @@
-import DashMain from "@/components/(dashboard)/dashMain";
+
+import DashMain from "@/components/(dashboard)/DashMain";
 import DashboardLayout from "@/components/(dashboard)/layout";
 import AllComponents from "@/components/(landing)/Allcomponents";
 import Hero from "@/components/(landing)/Hero";
