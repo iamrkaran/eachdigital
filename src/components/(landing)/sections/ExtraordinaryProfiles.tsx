@@ -22,8 +22,8 @@ const profiles = [
 ];
 
 const videoUrl = "/videos/extraordinary.mp4";
-const imageWidth = 450;
-const imageHeight = 800;
+const imageWidth = 370;
+const imageHeight = 620;
 
 const ExtraordinaryProfiles = () => {
   return (
@@ -44,13 +44,18 @@ const ExtraordinaryProfiles = () => {
             width: 100%;
             height: auto;
           }
+
+          .image-container {
+            margin-bottom: 4px;
+            margin-right: 4px; /* Adjust this value to reduce horizontal gap */
+          }
         `}
       </style>
       <div className="container mx-auto text-center">
         <h2 className="text-4xl font-extrabold mb-8">Extraordinary Profiles</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {profiles.map((profile, index) => (
-            <div key={index}>
+            <div key={index} className="image-container">
               <img
                 src={profile.imageUrl}
                 alt="profile"
@@ -60,17 +65,13 @@ const ExtraordinaryProfiles = () => {
                   width: `${imageWidth}px`,
                   height: `${imageHeight}px`,
                 }}
-                className="w-full h-full rounded-lg mx-auto mb-4"
+                className="w-full h-full rounded-lg mx-auto"
               />
             </div>
           ))}
         </div>
         <div className="bg-white rounded-lg shadow-md responsive-div">
-          <video
-            controls
-            className="responsive-video"
-            src={videoUrl}
-          >
+          <video controls className="responsive-video" src={videoUrl}>
             Your browser does not support the video tag.
           </video>
         </div>
