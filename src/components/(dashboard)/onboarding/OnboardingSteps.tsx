@@ -5,11 +5,8 @@ import Finalstep from "./finalstep";
 import Letsbegin from "./letsbegin";
 import Welcome from "./welcome";
 
-interface Props {
-  onFinish: () => void;
-}
 
-function OnboardingSteps({ onFinish }: Props): ReactElement {
+function OnboardingSteps(): ReactElement {
   const [currentStep, setCurrentStep] = useState(1);
 
   const nextStep = () => {
@@ -20,9 +17,7 @@ function OnboardingSteps({ onFinish }: Props): ReactElement {
     setCurrentStep(currentStep - 1);
   };
 
-  const closeStep = () => {
-    onFinish();
-  };
+
 
   const renderStep = () => {
     switch (currentStep) {
@@ -35,7 +30,7 @@ function OnboardingSteps({ onFinish }: Props): ReactElement {
           <Editdashboard nextStep={nextStep} previousStep={previousStep} />
         );
       case 4:
-        return <Finalstep previousStep={previousStep} closeStep={closeStep} />;
+        return <Finalstep previousStep={previousStep} />;
       default:
         return null;
     }
