@@ -3,8 +3,11 @@ import LandingLayout from "@/components/(landing)/layout";
 import Link from "next/link";
 import signup from "@/actions/signup-action";
 import { useState } from "react";
+import { toast } from "react-toastify";
+import { useRouter } from "next/navigation";
 
 export default function Signup() {
+  const navigate = useRouter();
   const [formData, setFormData] = useState<SignupFormData>({
     name: "",
     email: "",
@@ -23,7 +26,8 @@ export default function Signup() {
       username: form.get("username") as string,
     });
     signup(formData).then((response) => {
-      console.log(response);
+      toast.success("Signed up successfully");
+      navigate.push("/login");
     });
   };
 

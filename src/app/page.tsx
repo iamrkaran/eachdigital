@@ -1,20 +1,21 @@
-
-import DashMain from "@/components/(dashboard)/DashMain";
+"use client";
 import DashboardLayout from "@/components/(dashboard)/layout";
 import AllComponents from "@/components/(landing)/Allcomponents";
 import Hero from "@/components/(landing)/Hero";
 import LandingLayout from "@/components/(landing)/layout";
+import DashboardContent from "./[username]/page";
+import { useSelector } from "react-redux";
 
 export default function Home() {
-  // Assuming isLoggedIn is a boolean variable
-  const isLoggedIn = false;
+  const isAuthenticated: boolean = useSelector(
+    (state: any) => state.auth.isAuthenticated
+  );
 
   return (
     <>
-      {isLoggedIn ? (
+      {isAuthenticated ? (
         <DashboardLayout>
-          {/* Content for authenticated users (dashboard) */}
-          <DashMain />
+          <DashboardContent />
         </DashboardLayout>
       ) : (
         <LandingLayout>

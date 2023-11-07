@@ -1,9 +1,10 @@
 import React from "react";
-import sampleUser from "@/data/userdata";
+
 import Image from "next/image";
+import { useSelector } from "react-redux";
 
 const Dashboard: React.FC = () => {
-  const user = sampleUser;
+  const user = useSelector((state: any) => state.auth?.user);
 
   return (
     <div className="bg-gray-100 ">
@@ -35,14 +36,12 @@ const Dashboard: React.FC = () => {
         </p>
       </div>
 
-      {/* Dashboard Widgets */}
-      <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-        {user.customizableDashboard.widgets.map((widget:any) => (
-          <div key={widget.id} className="bg-white p-4 rounded shadow-md">
-            <h2 className="text-lg font-semibold">{widget.title}</h2>
-            <p className="text-gray-600">{widget.content}</p>
-          </div>
-        ))}
+      {/* Followers section */}
+      <div className="mt-4 bg-white p-4 rounded shadow-md">
+        <h2 className="text-lg font-semibold">Followers</h2>
+        <p className="text-gray-600">
+          {user.followers} users are following you
+        </p>
       </div>
     </div>
   );

@@ -7,7 +7,7 @@ type User = {
     following: number; // Number of users being followed
     posts: number; // Number of posts created by the user
     bio: string; // User's bio or description
-    onboardingCompleted: boolean; // Whether the user has completed the onboarding process
+    isOnBoardingCompleted: boolean; // Whether the user has completed the onboarding process
     customizableDashboard: CustomizableDashboard;
   }
   
