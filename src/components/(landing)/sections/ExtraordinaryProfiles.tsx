@@ -52,7 +52,7 @@ const ExtraordinaryProfiles = () => {
         `}
       </style>
       <div className="container mx-auto text-center">
-        <h2 className="text-4xl font-extrabold mb-8">Extraordinary Profiles</h2>
+        <h2 className="text-4xl font-extrabold mb-8">Goodbye Outdated Profiles. Our Needs Have Changed.</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {profiles.map((profile, index) => (
             <div key={index} className="image-container">

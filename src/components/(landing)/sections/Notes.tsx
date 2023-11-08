@@ -14,15 +14,15 @@ const Notes = () => {
             className="w-full h-full object-cover"
           />
         </div>
-        <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">Each It</h2>
+        <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">You Can Always Each It</h2>
         <p className="text-lg mb-8 text-center">
-          This is where you can find our latest updates and important notes.
+          Post To Your Each Timeline and Prepare For New Levels of Interaction. Users Can Go To Gift You Directly from Your Post, 
+          Reward Points, Go Live Directly in Response, Add Posts to their Journal, Repost with an Positive or Dislike Sentiment, 
+          Raise up in Support, Add To Their Story, Post a Video Reply with it, Add it onto One of their profile sceens, get a remainder of it, 
+          start a chatbox with it, turn it into a request challenge, or focus it for a group call. Premium users can even have their own theme 
+          shown above their posts on the Timeline.
         </p>
-        <ul className="text-left list-disc">
-          <li className="mb-2">Stay tuned for exciting announcements.</li>
-          <li className="mb-2">Get insights and tips for using our platform.</li>
-          <li className="mb-2">Join discussions and share your thoughts.</li>
-        </ul>
+        
       </div>
     </section>
   );
