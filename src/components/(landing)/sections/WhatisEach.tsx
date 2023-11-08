@@ -4,12 +4,10 @@ const WhatIsEach = () => {
   return (
     <section className="bg-primary-100 text-gray-800 py-16">
       <div className="container mx-auto text-center">
-      <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">What is Each?</h2>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">Every Day With Each</h2>
 
         <p className="text-lg mb-8">
-          Each is a next-generation social media platform that lets you connect
-          with friends, explore futuristic cityscapes, and experience a new era
-          of social networking. Here&apos;s what makes Each stand out:{" "}
+          EACH is a strong messenger, network, service system, andn a next-level profile Creater. It's the perfect link for your bio, a superb site replacement, and a one stop shop for your needs.
         </p>
         <ul className="text-left list-disc">
           <li className="mb-2">

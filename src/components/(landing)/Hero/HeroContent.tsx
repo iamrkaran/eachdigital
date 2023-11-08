@@ -92,9 +92,10 @@ const HeroContent = (props: Props) => {
 							></path>
 						</svg>
 					</a> */}
-					<h1 className="mb-4 text-4xl xl:text-8xl sm:text-3xl font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl text-primary-100">
-						{props.title}
+					<h1 className="mb-4 text-4xl xl:text-8xl sm:text-3xl font-extrabold tracking-tight leading-none  md:text-5xl lg:text-6xl text-black">
+  						{props.title}
 					</h1>
+
 					<div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
 						<a
 							href="#"
@@ -116,7 +117,7 @@ const HeroContent = (props: Props) => {
 						</a>
 						<a
 							href="#"
-							className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-white dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800"
+							className="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 dark:text-black dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 hover:text-white"
 						>
 							<svg
 								className="mr-2 -ml-1 w-5 h-5"
@@ -127,7 +128,7 @@ const HeroContent = (props: Props) => {
 							>
 									<path
 										d="M7 10L12 15L17 10"
-										stroke="#ffffff"
+										stroke="#000000"
 										strokeWidth="1.5"
 										strokeLinecap="round"
 										strokeLinejoin="round"
