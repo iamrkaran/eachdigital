@@ -49,7 +49,7 @@ const Login = () => {
         dispatch(setUser(response.data));
         const username = response.data.username;
         toast.success("Logged in successfully");
-        router.push(`${username}`);
+        router.push(`/dashboard/${username}`);
       } catch (error) {
         // Handle network errors or other exceptions
         setError("An error occurred while logging in. Please try again.");

@@ -6,7 +6,7 @@ interface EditDashboardProps {
   previousStep: () => void;
 }
 
-const EditDashboard: React.FC<EditDashboardProps> = ({
+const EditDashboard: React.FC<EditDashboardProps> = ({ 
   nextStep,
   previousStep,
 }): ReactElement => {
