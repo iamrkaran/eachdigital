@@ -82,6 +82,7 @@
 
 // export default ControlyourTimeline;
 
+import Image from "next/image";
 import React from "react";
 
 const ControlYourTimeline = () => {
@@ -118,8 +119,10 @@ const ControlYourTimeline = () => {
             </ul>
           </div>
           <div className="md:w-1/2">
-            <img
-              src="/images/timeline/1.png" // Replace with the image file path
+            <Image
+              width={500}
+              height={500}
+              src="/images/timeline/1.png" 
               alt="Timeline Image"
               className="w-full h-auto rounded-lg object-cover"
             />

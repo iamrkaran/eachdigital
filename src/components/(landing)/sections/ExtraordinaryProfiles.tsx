@@ -1,3 +1,4 @@
+import Image from "next/image";
 import React from "react";
 
 const profiles = [
@@ -56,7 +57,7 @@ const ExtraordinaryProfiles = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
           {profiles.map((profile, index) => (
             <div key={index} className="image-container">
-              <img
+              <Image
                 src={profile.imageUrl}
                 alt="profile"
                 width={imageWidth}
