@@ -1,10 +1,19 @@
 import React from "react";
 
 import Image from "next/image";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { clearUser } from "@/auth/authSlice";
+import { useRouter } from "next/navigation";
 
 const Dashboard: React.FC = () => {
   const user = useSelector((state: any) => state.auth?.user);
+  const dispatch = useDispatch();
+  const router = useRouter();
+
+  const logout = () => {
+    dispatch(clearUser());
+    router.push('/');
+  };
 
   return (
     <div className="bg-gray-100 ">
@@ -23,6 +32,14 @@ const Dashboard: React.FC = () => {
           <div>
             <h2 className="text-lg font-semibold">{user.username}</h2>
             <p className="text-gray-600">{user.email}</p>
+          </div>
+          <div className="ml-auto">
+            <button
+              className="bg-red text-white px-4 py-2 rounded-full"
+              onClick={logout}
+            >
+              Logout
+            </button>
           </div>
         </div>
       </div>
