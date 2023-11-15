@@ -2,15 +2,15 @@ import React from "react";
 
 const videoData = [
   {
-    title: "Video 1",
-    description: "Watch our introduction video to learn more about us.",
+    title: "Add themes to your video posts, Pin other channels you support, add a section for requests, send your video In for review for our Each TV page and more.",
+    description: "",
     videoUrl: "https://www.youtube.com/embed/your-video-url-1", // Replace with your video URL
   },
-  {
-    title: "Video 2",
-    description: "Explore our platform features in this video tour.",
-    videoUrl: "https://www.youtube.com/embed/your-video-url-2", // Replace with your video URL
-  },
+  // {
+  //   title: "Video 2",
+  //   description: "Explore our platform features in this video tour.",
+  //   videoUrl: "https://www.youtube.com/embed/your-video-url-2", // Replace with your video URL
+  // },
   // Add more video data here
 ];
 

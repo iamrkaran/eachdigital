@@ -2,16 +2,12 @@ import React from "react";
 
 const aServiceData = [
   {
-    title: "Service 1",
-    description: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
+    title: "We're Here to give You What YouNeed Without All of The FluffPerformance",
+    description: "",
   },
   {
-    title: "Service 2",
-    description: "Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-  },
-  {
-    title: "Service 3",
-    description: "Duis aute irure dolor in reprehenderit in voluptate velit esse.",
+    title: "Step Away From The Standard Network and See How We Can",
+    description: "Find specialists to help you make and do what you need, read news in detail, get health and fitness instruction, Pay, Send meals and gifts to others, study, read, find support, apply for a grant and more.",
   },
   // Add more services as needed
 ];

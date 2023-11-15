@@ -22,16 +22,16 @@ import Performances from "./sections/Performances";
 import Points from "./sections/Points";
 import Requests from "./sections/Requests";
 import Rewards from "./sections/Rewards";
-import Showyourstyle from "./sections/Showyourstyle";
 import Stickers from "./sections/Stickers";
 import Videos from "./sections/Videos";
 import Visions from "./sections/Visions";
+import Inbox from "./sections/Inbox";
 
 const AllComponents = () => {
   return (
     <div>
       <WhatIsEach />
-      <ItsMoreThenYouThink />
+      {/* <ItsMoreThenYouThink /> */}
 
       <ExtraordinaryProfiles />
       <Notes />
@@ -45,18 +45,19 @@ const AllComponents = () => {
       <Visions />
 
       <Videos />
+      
       <Points />
-
-      <Showyourstyle />
-      <Stickers />
-
       <Rewards />
       <Requests />
 
-      <Adventures />
+      <Inbox />
+      {/* <Stickers /> */}
+
+
+      {/* <Adventures /> */}
       <AlgorithmPower />
 
-      <Data />
+      {/* <Data /> */}
       <Performances />
 
       <Games />
