@@ -13,7 +13,7 @@ const ControlYourTimeline = () => {
 							src="/images/timeline/1.png" // Replace with the image file path
 							alt="Timeline Image"
 							className="w-full h-auto rounded-lg object-cover"
-						/>
+						/> 
 					</div>
 					<div className="md:w-1/2 pl-8">
 						<p className="text-lg text-gray-600 text-left">

@@ -27,7 +27,7 @@ const ExpansionPacks = () => {
     <section className="bg-primary-100 py-16">
       <div className="container mx-auto">
       <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">Expansion Packs</h2>
-      <p>There are Many Ways to Elevate your Profile. We Won&apos;t List Them All, but We Guarantee You Won&apos;t Go without A Need. We Aim To surpass What You&apos;d Standardly have With a Website.</p>
+      <p className="md:w-1/2">There are Many Ways to Elevate your Profile. We Won&apos;t List Them All, but We Guarantee You Won&apos;t Go without A Need. We Aim To surpass What You&apos;d Standardly have With a Website.</p>
         {/* <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {expansionPacks.map((pack, index) => (
             <div key={index} className="flex items-center">
