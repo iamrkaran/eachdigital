@@ -4,9 +4,9 @@ const GetTheContentYouNeed = () => {
   return (
     <section className="bg-primary-100 py-16">
       <div className="container mx-auto">
-      <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">A messanger so good it might just have to be your go-to</h2>
+      <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">A messenger so good it might just have to be your go-to</h2>
         <div className="flex flex-col md:flex-row">
-          <div className="md:w-1/2 pr-8">
+          <div className=" pr-8">
             <p className="text-lg text-gray-600">
               We&apos;re a friendly network here and the 
               perfect Link-in-Bio Elsewhere, yet, at our 
