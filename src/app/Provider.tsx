@@ -3,6 +3,7 @@ import { persistor, store } from "@/utils/store";
 import { Provider } from "react-redux";
 import { PersistGate } from "redux-persist/integration/react";
 import { ToastContainer, toast } from "react-toastify";
+import { NextUIProvider } from "@nextui-org/react";
 
 import "react-toastify/dist/ReactToastify.css";
 
@@ -22,7 +23,7 @@ export default function Providers({ children }: { children: React.ReactNode }) {
           pauseOnHover={true}
           theme="dark"
         />
-        {children}
+        <NextUIProvider>{children}</NextUIProvider>
       </PersistGate>
     </Provider>
   );
