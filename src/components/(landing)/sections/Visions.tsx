@@ -4,6 +4,7 @@ import React from 'react';
 const Visions = () => {
 	return (
 		<section className="bg-primary-100 py-16">
+			 
 			<div className="container mx-auto text-center">
 				<h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">
 					Takes
@@ -29,20 +30,6 @@ const Visions = () => {
 						</div>
 					</div>
 
-					{/* <div className="bg-white rounded-lg shadow-md">
-						<Image
-							width={500}
-							height={500}
-							src="/images/games/1.jpg"
-							alt="Vision 2"
-							className="w-full h-auto object-cover rounded-t-lg"
-						/>
-						<div className="p-4">
-							<p className="text-lg text-gray-600">
-								We aim to connect people and communities through technology.
-							</p>
-						</div>
-					</div> */}
 				</div>
 			</div>
 		</section>

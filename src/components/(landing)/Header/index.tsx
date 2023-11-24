@@ -36,7 +36,7 @@ const Header = () => {
 
   return (
     <>
-      <header className="bg-contrast w-full h-[65px] fixed top-0 backdrop-blur-md z-50">
+      <header className={`fixed top-0 left-0 right-0 z-50 ${sticky ? "backdrop-blur-md shadow-md top-0" : "bg-transparent top-5"}`}>
         <div className="w-full h-full flex flex-row items-center justify-between m-auto ">
           <div className="container">
             <div className="relative  flex items-center justify-between">
@@ -138,7 +138,7 @@ const Header = () => {
                   
                   <Link
                     href="/signup"
-                    className="hidden p-2 bg-gradient-to-r from-secondary-500 to-primary-500 text-center text-white cursor-pointer rounded-lg max-w-[200px] md:block"
+                    className="hidden p-2 px-4 bg-gradient-to-r from-purple-500 to-primary  hover:opacity-70  text-center text-white cursor-pointer rounded-sm max-w-[200px] md:block"
                   >
                     Sign Up
                   </Link>

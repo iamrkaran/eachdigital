@@ -115,7 +115,7 @@ export default function Signup() {
             </div>
             <button
               type="submit"
-              className="w-full bg-primary-500 text-white rounded-lg py-2 hover:bg-blue-600"
+              className="w-full bg-gradient-to-r from-purple-500 to-primary hover:opacity-70 text-white rounded-lg py-2 "
             >
               Sign Up
             </button>
