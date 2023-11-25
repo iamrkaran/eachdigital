@@ -1,6 +1,6 @@
 "use client";import axiosInstance from "@/config/axiosConfig";
 import { useEffect, useState } from "react";
-import { ChatBubbleOvalLeftIcon, HeartIcon, UserCircleIcon } from "@heroicons/react/24/outline";
+import { ChatBubbleOvalLeftIcon, HeartIcon, UserCircleIcon , ArrowUpTrayIcon, ArrowPathRoundedSquareIcon  } from "@heroicons/react/24/outline";
 import Image from "next/image";
 
 const Post: React.FC = () => {
@@ -72,14 +72,21 @@ const Post: React.FC = () => {
 
           <p className="text-gray-700 mt-2">{post.caption}</p>
 
-          <div className="flex items-center mt-4 space-x-4">
+          <div className="flex items-center justify-between mt-4 space-x-4">
             <button className="text-red-500 hover:text-red-600 focus:outline-none">
               <HeartIcon className="h-6 w-6" />
             </button>
             <button className="text-gray-500 hover:text-gray-600 focus:outline-none">
               <ChatBubbleOvalLeftIcon className="h-6 w-6" />
             </button>
+            <button className="text-gray-500 hover:text-gray-600 focus:outline-none">
+              <ArrowPathRoundedSquareIcon className="h-6 w-6" />
+            </button>
+            <button className="text-gray-500 hover:text-gray-600 focus:outline-none">
+              <ArrowUpTrayIcon className="h-6 w-6" />
+            </button>
           </div>
+
         </div>
       ))}
     </div>

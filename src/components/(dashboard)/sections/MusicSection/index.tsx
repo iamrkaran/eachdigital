@@ -1,6 +1,7 @@
 import React from "react";
 import { ProfileDesign } from "./ProfileDesign";
 import Image from "next/image";
+import MusicPlayer from "./MusicPlayer";
 
 const MusicSection = () => {
   return (
@@ -20,7 +21,7 @@ const MusicSection = () => {
       <div className="h-3/4 overflow-y-auto p-4">
         {/* Add your music content here */}
         <h2 className="text-2xl font-bold mb-4">Music Section</h2>
-        <p>Your music content goes here...</p>
+        <MusicPlayer />
       </div>
 
       {/* Profile Design */}
