@@ -11,7 +11,7 @@ const EditDashboard: React.FC<EditDashboardProps> = ({
   previousStep,
 }): ReactElement => {
   return (
-    <div className="bg-green h-screen flex flex-col justify-center items-center">
+    <div className="bg-green-500 h-screen flex flex-col justify-center items-center">
       <h1 className="text-4xl text-white font-bold mb-4">Edit Dashboard</h1>
       <div>
         <button className="m-4 p-4" onClick={previousStep}>

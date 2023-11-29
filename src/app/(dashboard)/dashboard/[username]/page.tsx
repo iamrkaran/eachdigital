@@ -2,7 +2,7 @@
 import React from "react";
 import { useSelector } from "react-redux";
 
-import Dashboard from "@/components/(dashboard)/main/Dashboard";
+import Timeline from "@/components/(dashboard)/main/Timeline";
 import OnboardingSteps from "@/components/(dashboard)/onboarding/OnboardingSteps";
 import { useRouter } from "next/navigation";
 
@@ -24,7 +24,7 @@ export default function DashboardContent() {
     <div>
       <main>
         {isAuthenticated && !isOnboardingCompleted && <OnboardingSteps />}
-        {isAuthenticated && isOnboardingCompleted && <Dashboard />}
+        {isAuthenticated && isOnboardingCompleted && <Timeline />}
       </main>
     </div>
   );

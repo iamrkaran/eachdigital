@@ -19,7 +19,6 @@ export default function Home() {
         </DashboardLayout>
       ) : (
         <LandingLayout>
-          {/* Content for non-authenticated users (landing page) */}
           <Hero />
           <AllComponents />
         </LandingLayout>
