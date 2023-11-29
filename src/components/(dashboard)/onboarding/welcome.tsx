@@ -7,7 +7,7 @@ type Props = {
 
 const Welcome = ({ nextStep }: Props) => {
   return (
-    <div className="bg-purple h-screen flex flex-col justify-center items-center">
+    <div className="bg-purple-500 h-screen flex flex-col justify-center items-center">
       <h1 className="text-4xl text-white font-bold mb-4">
         Welcome to Your Dashboard
       </h1>
