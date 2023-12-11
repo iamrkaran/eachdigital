@@ -6,6 +6,13 @@ const nextConfig = {
     images: {
         domains: ['localhost', 'eachdigital.s3.amazonaws.com'],
     },
+    images:{
+        remotePatterns: [{
+            hostname: 'eachdigital.s3.amazonaws.com',
+            protocol: 'https',
+        }],
+        
+    }
 }
 
 module.exports = nextConfig
