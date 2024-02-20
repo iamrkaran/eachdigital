@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { clearUser, setUser } from '@/auth/authSlice';
+import { clearUser, setUser } from '@/features/auth/authSlice';
 import axiosInstance from '@/config/axiosConfig';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';

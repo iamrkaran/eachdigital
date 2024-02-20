@@ -9,7 +9,7 @@ import { useDispatch, useSelector } from "react-redux";
 import Image from "next/image";
 import { useRouter } from "next/navigation";
 
-import { clearUser } from "@/auth/authSlice";
+import { clearUserData } from "@/features/auth/authSlice";
 
 export const ProfileDesign = () => {
   const dispatch = useDispatch();
@@ -17,7 +17,7 @@ export const ProfileDesign = () => {
   const user = useSelector((state: any) => state.auth?.user);
 
   const logout = () => {
-    dispatch(clearUser());
+    dispatch(clearUserData());
     router.push("/");
   };
 

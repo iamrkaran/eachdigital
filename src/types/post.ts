@@ -1,8 +1,8 @@
 interface Post {
     _id: string;
-    user: string;
+    author: string;
     caption: string;
-    imageUrl: string;
+    image: string;
     likes: string[];
     createdDate: string;
     createdAt: string;

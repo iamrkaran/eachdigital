@@ -130,14 +130,14 @@ const Header = () => {
                 </div>
                 <div className="flex items-center justify-end pr-16 lg:pr-0">
                   <Link
-                    href="/login"
+                    href="/auth/login"
                     className="hidden py-3 px-7 text-base font-bold text-dark hover:opacity-70  md:block"
                   >
                     Sign In
                   </Link>
                   
                   <Link
-                    href="/signup"
+                    href="/auth/signup"
                     className="hidden p-2 px-4 bg-gradient-to-r from-purple-500 to-primary  hover:opacity-70  text-center text-white cursor-pointer rounded-sm max-w-[200px] md:block"
                   >
                     Sign Up
