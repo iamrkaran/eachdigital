@@ -5,7 +5,6 @@ import Finalstep from "./finalstep";
 import Letsbegin from "./letsbegin";
 import Welcome from "./welcome";
 
-
 function OnboardingSteps(): ReactElement {
   const [currentStep, setCurrentStep] = useState(1);
 
@@ -16,8 +15,6 @@ function OnboardingSteps(): ReactElement {
   const previousStep = () => {
     setCurrentStep(currentStep - 1);
   };
-
-
 
   const renderStep = () => {
     switch (currentStep) {

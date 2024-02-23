@@ -1,12 +1,13 @@
 import React from "react";
 import CreatePost from "./CreatePost";
-import Post from "./Post";
+import PostComponnets from "./PostComponent";
+
 
 const Index = () => {
   return (
-    <div className="flex flex-col items-center justify-center">
+    <div className="flex flex-col mx-auto">
       <CreatePost />
-      <Post />
+      <PostComponnets />
     </div>
   );
 };

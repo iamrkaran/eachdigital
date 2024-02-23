@@ -6,7 +6,7 @@ import LandingLayout from "@/components/(landing)/layout";
 import Link from "next/link";
 
 import axiosInstance from "@/config/axiosConfig";
-import { setUser } from "@/auth/authSlice";
+import { setUserData } from "@/features/auth/authSlice";
 import { useRouter } from "next/navigation";
 import { toast } from "react-toastify";
 
@@ -44,12 +44,24 @@ const Login = () => {
         }
         // Make a POST request to your authentication endpoint
         // Replace axiosInstance.post with your actual API call
-        const response = await axiosInstance.post("/auth/signin", formData);
-
-        dispatch(setUser(response.data));
-        const username = response.data.username;
+        const response = await axiosInstance.post("/auth/login", formData);
+        const accessToken = response.data?.accessToken;
+        
+        const userData = await axiosInstance.post(
+          "/auth/profile",
+          {},
+          {
+            headers: {
+              Authorization: `Bearer ${accessToken}`,
+            },
+          }
+        );
+        
+        // Dispatch the user data to the Redux store
+        dispatch(setUserData({ userData: userData.data, accessToken: accessToken }));
         toast.success("Logged in successfully");
-        router.push(`/dashboard/${username}`);
+        // Redirect the user to the dashboard in lower case 
+        router.push(`/dashboard/${userData.data.username.toLowerCase()}`);
       } catch (error) {
         // Handle network errors or other exceptions
         setError("An error occurred while logging in. Please try again.");
@@ -60,7 +72,11 @@ const Login = () => {
 
   return (
     <LandingLayout>
-      <div className="min-h-screen flex items-center justify-center ">
+      <div
+        className="min-h-screen flex items-center justify-center 
+      bg-gradient-to-r from-purple-500 to-primary
+      "
+      >
         <div className="bg-white p-8 rounded-lg shadow-md w-full sm:w-96">
           <h2 className="text-2xl font-semibold mb-4 text-center">Log In</h2>
           <form onSubmit={handleLogin}>

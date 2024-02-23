@@ -11,8 +11,8 @@ export default function DashboardContent() {
   const isAuthenticated = useSelector(
     (state: any) => state.auth.isAuthenticated
   );
-  const isOnboardingCompleted = useSelector(
-    (state: any) => state.auth?.user?.isOnBoardingCompleted
+  const isOnboardingComplete = useSelector(
+    (state: any) => state.auth?.user?.isOnBoardingComplete
   );
 
   // Redirect to home if not authenticated
@@ -23,8 +23,8 @@ export default function DashboardContent() {
   return (
     <div>
       <main>
-        {isAuthenticated && !isOnboardingCompleted && <OnboardingSteps />}
-        {isAuthenticated && isOnboardingCompleted && <Timeline />}
+        {isAuthenticated && !isOnboardingComplete && <OnboardingSteps />}
+        {isAuthenticated && isOnboardingComplete && <Timeline />}
       </main>
     </div>
   );

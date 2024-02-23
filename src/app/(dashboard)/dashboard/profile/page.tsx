@@ -1,7 +1,7 @@
 "use client";
 import React, { useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-import { clearUser, setUser } from '@/auth/authSlice';
+import { setUserData, clearUserData } from '@/features/auth/authSlice';
 import axiosInstance from '@/config/axiosConfig';
 import { Button } from '@/components/ui/button';
 import { useRouter } from 'next/navigation';
@@ -17,8 +17,7 @@ const ProfilePage: React.FC = () => {
       try {
         const response = await axiosInstance.get(`/users/${userId}`);  
         const user = response.data; 
-        setUserData(user);
-        dispatch(setUser(response.data));
+        
       } catch (error) {
         console.error('Error fetching user data:', error);
       }
@@ -32,7 +31,7 @@ const ProfilePage: React.FC = () => {
   const router=useRouter();
 
   const logout = () => {
-    dispatch(clearUser());
+    dispatch(clearUserData());
     router.push("/");
   };
 

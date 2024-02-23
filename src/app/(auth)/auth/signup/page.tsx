@@ -9,51 +9,58 @@ import { useRouter } from "next/navigation";
 export default function Signup() {
   const navigate = useRouter();
   const [formData, setFormData] = useState<SignupFormData>({
-    name: "",
+    username: "",
     email: "",
     password: "",
-    username: "",
   });
+  const [loading, setLoading] = useState(false);
 
   const handleFormSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+    // setLoading(true);
 
-    const form = new FormData(e.currentTarget);
-    setFormData({
-      name: form.get("name") as string,
-      email: form.get("email") as string,
-      password: form.get("password") as string,
-      username: form.get("username") as string,
-    });
-    signup(formData).then((response) => {
-      toast.success("Signed up successfully");
-      navigate.push("/login");
-    });
+    try {
+      const form = new FormData(e.currentTarget);
+      setFormData({
+        password: form.get("password") as string,
+        email: form.get("email") as string,
+        username: form.get("username") as string,
+      });
+      signup(formData).then((response) => {
+        toast.success("Signed up successfully");
+        navigate.push("/login");
+      });
+    } catch (error) {
+      // Display error message
+      toast.error("Signup failed. Please try again.");
+    } finally {
+      // setLoading(false);
+    }
   };
 
   return (
     <LandingLayout>
-      <div className="min-h-screen flex items-center justify-center ">
+      <div className="min-h-screen flex items-center justify-center  bg-gradient-to-r from-purple-500 to-primary">
         <div className="bg-white p-8 rounded-lg shadow-md w-full sm:w-96">
           <h2 className="text-2xl font-semibold mb-4 text-center">Sign Up</h2>
           <form onSubmit={handleFormSubmit}>
             <div className="mb-4">
               <label
-                htmlFor="name"
+                htmlFor="username"
                 className="block text-sm font-medium text-gray-600"
               >
-                Name
+                Username
               </label>
               <input
                 type="text"
-                id="name"
-                name="name"
-                value={formData.name}
+                id="username"
+                name="username"
+                value={formData.username}
                 onChange={(e) =>
-                  setFormData({ ...formData, name: e.target.value })
+                  setFormData({ ...formData, username: e.target.value })
                 }
                 className="w-full px-3 py-2 border rounded-lg focus:ring focus:ring-blue-200 focus:outline-none"
-                placeholder="John Doe"
+                placeholder="johndoe"
               />
             </div>
             <div className="mb-4">
@@ -73,25 +80,6 @@ export default function Signup() {
                 }
                 className="w-full px-3 py-2 border rounded-lg focus:ring focus:ring-blue-200 focus:outline-none"
                 placeholder="you@example.com"
-              />
-            </div>
-            <div className="mb-4">
-              <label
-                htmlFor="username"
-                className="block text-sm font-medium text-gray-600"
-              >
-                Username
-              </label>
-              <input
-                type="text"
-                id="username"
-                name="username"
-                value={formData.username}
-                onChange={(e) =>
-                  setFormData({ ...formData, username: e.target.value })
-                }
-                className="w-full px-3 py-2 border rounded-lg focus:ring focus:ring-blue-200 focus:outline-none"
-                placeholder="johndoe"
               />
             </div>
             <div className="mb-4">

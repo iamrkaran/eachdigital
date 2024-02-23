@@ -16,7 +16,7 @@ import { AlertDialog, AlertDialogTrigger, AlertDialogContent, AlertDialogTitle, 
 import { AlertDialogDemo } from "./AlertDialogTest";
 
 const CreatePost = () => {
-  const userId = useSelector((state: any) => state.auth?.user?.id);
+  const userId = useSelector((state: any) => state.auth?.user?._id);
   const [file, setFile] = useState<File | null>(null);
   const [caption, setCaption] = useState("");
   const [textArea, setTextArea] = useState(false);
@@ -34,7 +34,7 @@ const CreatePost = () => {
         const formData = new FormData();
         formData.append("file", file);
         formData.append("caption", caption);
-        formData.append("user", userId);
+        formData.append("author", userId);
         
         await axiosInstance.post("/posts", formData, {
           headers: {

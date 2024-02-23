@@ -1,5 +1,5 @@
 type SignupFormData = {
-  name: string;
+  name?: string;
   username: string;
   email: string;
   password: string;
