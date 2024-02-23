@@ -36,7 +36,6 @@ const ShowComments: React.FC<ShowCommentsProps> = ({ postId }) => {
 
   return (
     <div>
-      <h2>Comments</h2>
       {comments.length > 0 && (
         <>
           {showAllComments ? (

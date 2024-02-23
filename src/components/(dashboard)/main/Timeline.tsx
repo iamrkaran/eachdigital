@@ -14,7 +14,7 @@ const Timeline: React.FC = () => {
 
       {/* Main Post Block Section */}
       <div
-        className="lg:w-[500px] sm/md:flex-grow rounded shadow-md scrollbar"
+        className="lg:w-[500px] sm/md:flex-grow rounded shadow-md scrollbar bg-gray-700"
         style={{
           maxHeight: "calc(100vh)",
           scrollbarWidth: "none",

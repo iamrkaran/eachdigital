@@ -6,13 +6,13 @@ import PostFooter from './postDesign/PostFooter';
 import axiosInstance from '@/config/axiosConfig';
 import { Like } from '@/types/like';
 import ShowComments from './postDesign/comments/ShowComments';
+import PostFooterIcon from './postDesign/PostFooterIcon';
 
 const PostComponent: React.FC = () => {
   const [posts, setPosts] = useState<Post[]>([]);
   const [loading, setLoading] = useState<boolean>(true);
   const [error, setError] = useState<string | null>(null);
   const [userData, setUserData] = useState<{ [key: string]: string }>({});
-  const [likes, setLikes] = useState<Like[]>([]);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -38,10 +38,6 @@ const PostComponent: React.FC = () => {
 
         setUserData(userDataObject);
 
-        // TODO: Uncomment the following code if needed for fetching likes
-        // const likesResponse = await axiosInstance.get<Like[]>("/likes");
-        // const fetchedLikes = likesResponse.data;
-        // setLikes(fetchedLikes);
 
       } catch (error: any) {
         console.error("Error fetching posts:", error.message);
@@ -66,13 +62,14 @@ const PostComponent: React.FC = () => {
   };
 
   return (
-    <div className="w-full p-4 bg-blue-300 rounded-md shadow-md">
-      {posts.map((post) => (
-        <div key={Number(post._id)}>
+    <div className="w-full rounded-md shadow-md ">
+      {posts.map((post,index) => (
+        <div key={index} className='mt-4 mb-8 bg-gray-100 rounded-sm p-2'>
           {/* Post components */}
-          <PostHeader username={userData[post.author]} />
-          <PostBody image={post.image[0]} caption={post.caption} />
-          <PostFooter likes={likes} postId={post._id} />
+          <PostHeader username={userData[post.author]} image={userData[post.image]} postId={post._id} />
+          <PostBody image={post?.image[0]} caption={post?.caption} />
+          <PostFooterIcon  postId={post._id} />
+          <PostFooter username={userData[post.author]} postId={post._id} caption={post?.caption}  /> 
           <ShowComments postId={post._id} />
         </div>
       ))}
