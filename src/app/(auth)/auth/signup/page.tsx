@@ -28,7 +28,7 @@ export default function Signup() {
       });
       signup(formData).then((response) => {
         toast.success("Signed up successfully");
-        navigate.push("/login");
+        navigate.push("/auth/login");
       });
     } catch (error) {
       // Display error message
