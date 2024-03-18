@@ -3,28 +3,22 @@ import React from 'react';
 
 const EachforKidsPage: React.FC = () => {
 	return (
-		<section className="bg-primary-100 py-16">
-			<div className="container mx-auto">
-				<h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4 text-center">
-					Each For Kids
-				</h2>
-				<div>
-					<div className="bg-white rounded-lg shadow-md">
-						<div className="p-4">
-							<h3 className="text-2xl font-semibold mb-2 text-center">
-								Do They Love Your Phone? Dld They Just Get Their Own?
-							</h3>
-							<p className="text-gray-600">
-								We Have a Side Platform Specifically Set For Young Audiences
-								Being Able to Scroll Through Kid- Friendly, kid-Made, Kid TV,
-								and Similar Content. Laughs Can Be Enjoyed with Age Appropriate
-								Material. Creators and Productions can support.
-							</p>
-						</div>
-					</div>
-				</div>
+		<div className="flex-1" data-aos="zoom-in-up">
+			<h2 className="text-3xl font-bold capitalize relative text-[#37517e] text-center">
+				Each For Kids
+			</h2>
+			<div className="p-4 text-center">
+				<h3 className="overflow-hidden text-gray-700">
+					Do They Love Your Phone? Dld They Just Get Their Own?
+				</h3>
+				<p className="overflow-hidden text-gray-600">
+					We Have a Side Platform Specifically Set For Young Audiences
+					Being Able to Scroll Through Kid- Friendly, kid-Made, Kid TV,
+					and Similar Content. Laughs Can Be Enjoyed with Age Appropriate
+					Material. Creators and Productions can support.
+				</p>
 			</div>
-		</section>
+		</div>
 	);
 };
 

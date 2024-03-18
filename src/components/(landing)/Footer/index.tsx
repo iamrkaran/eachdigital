@@ -4,29 +4,26 @@ import Link from "next/link";
 const Footer = () => {
   return (
     <>
-      <footer
-        className=" bg-primary-100 wow fadeInUp relative z-10  pt-16 md:pt-20 lg:pt-24"
-        data-wow-delay=".1s"
-      >
+      <footer className="relative z-10 bg-green-70 pt-16 md:pt-16 lg:pt-16" >
         <div className="container">
-          <div className="-mx-4 flex flex-wrap">
+          <div className="flex flex-wrap">
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-5/12">
-              <div className="mb-12 max-w-[360px] lg:mb-0">
-                <Link href="/" className="mb-8 inline-block">
+              <div className="mb-12 max-w-[360px] space-y-4">
+                <Link href="/" className="inline-block">
                   <Image
                     src="/images/logo/logo.png"
                     alt="logo"
-                    className="w-full mb-4"
+                    className="w-[80%] -ml-2"
                     width={140}
                     height={30}
                   />
                 </Link>
-               
-                <div className="flex items-center">
+
+                <div className="flex items-center gap-2">
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-dark-[#CED3F6] hover:text-dark-primary"
+                    className="text-dark-[#CED3F6] hover:text-[#3b4694] hover:border border border-[#3b4694] hover:bg-white bg-[#3b4694] p-3 rounded-full text-white"
                   >
                     <svg
                       width="9"
@@ -40,7 +37,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-dark-[#CED3F6] hover:text-dark-primary"
+                    className="text-dark-[#CED3F6] hover:text-[#3b4694] hover:border border border-[#3b4694] hover:bg-white bg-[#3b4694] p-3 rounded-full text-white"
                   >
                     <svg
                       width="19"
@@ -54,7 +51,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-dark-[#CED3F6] hover:text-dark-primary"
+                    className="text-dark-[#CED3F6] hover:text-[#3b4694] hover:border border border-[#3b4694] hover:bg-white bg-[#3b4694] p-3 rounded-full text-white"
                   >
                     <svg
                       width="18"
@@ -68,7 +65,7 @@ const Footer = () => {
                   <a
                     href="/"
                     aria-label="social-link"
-                    className="mr-6 text-dark-[#CED3F6] hover:text-dark-primary"
+                    className="text-dark-[#CED3F6] hover:text-[#3b4694] hover:border border border-[#3b4694] hover:bg-white bg-[#3b4694] p-3 rounded-full text-white"
                   >
                     <svg
                       width="17"
@@ -84,15 +81,15 @@ const Footer = () => {
             </div>
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
-              <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-dark-xl font-bold  text-dark">
+              <div className="mb-8 lg:mb-12">
+                <h2 className="mb-6 font-bold text-[#37517e]">
                   Useful Links
                 </h2>
-                <ul>
+                <ul className="px-2">
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
+                      className="mb-4 inline-block text-sm hover:ml-1 hover:text-gray-700"
                     >
                       {" "}
                       Blog{" "}
@@ -101,7 +98,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
+                      className="mb-4 inline-block text-sm hover:ml-1 hover:text-gray-700"
                     >
                       {" "}
                       Pricing{" "}
@@ -110,7 +107,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
+                      className="mb-4 inline-block text-sm hover:ml-1 hover:text-gray-700"
                     >
                       {" "}
                       About{" "}
@@ -122,14 +119,14 @@ const Footer = () => {
 
             <div className="w-full px-4 sm:w-1/2 md:w-1/2 lg:w-2/12 xl:w-2/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-dark-xl font-bold  text-dark">
+                <h2 className="mb-6 font-bold text-[#37517e]">
                   Terms
                 </h2>
                 <ul>
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
+                      className="mb-4 inline-block text-sm hover:ml-1 hover:text-gray-700"
                     >
                       {" "}
                       TOS{" "}
@@ -138,7 +135,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
+                      className="mb-4 inline-block text-sm hover:ml-1 hover:text-gray-700"
                     >
                       {" "}
                       Privacy Policy{" "}
@@ -147,7 +144,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
+                      className="mb-4 inline-block text-sm hover:ml-1 hover:text-gray-700"
                     >
                       {" "}
                       Refund Policy{" "}
@@ -159,14 +156,14 @@ const Footer = () => {
 
             <div className="w-full px-4 md:w-1/2 lg:w-4/12 xl:w-3/12">
               <div className="mb-12 lg:mb-16">
-                <h2 className="mb-10 text-dark-xl font-bold  text-dark">
+                <h2 className="mb-6 font-bold text-[#37517e]">
                   Support & Help
                 </h2>
                 <ul>
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
+                      className="mb-4 inline-block text-sm hover:ml-1 hover:text-gray-700"
                     >
                       {" "}
                       Open Support Ticket{" "}
@@ -175,7 +172,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
+                      className="mb-4 inline-block text-sm hover:ml-1 hover:text-gray-700"
                     >
                       {" "}
                       Terms of Use{" "}
@@ -184,7 +181,7 @@ const Footer = () => {
                   <li>
                     <a
                       href="/"
-                      className="mb-4 inline-block text-dark-base font-medium text-dark-gray-300 hover:text-dark-primary"
+                      className="mb-4 inline-block text-sm hover:ml-1 hover:text-gray-700"
                     >
                       {" "}
                       About{" "}
@@ -195,10 +192,10 @@ const Footer = () => {
             </div>
           </div>
         </div>
-        <div className="bg-primary/10 py-8">
+        <div className="bg-primary/10 py-6">
           <div className="container">
-            <p className="text-center text-dark-base text-dark-gray-300 ">
-              © {new Date().getFullYear()} Each Digital. All Rights
+            <p className="text-center text-gray-800 text-sm">
+              ©{new Date().getFullYear()} Each Digital. All Rights
               Reserved.
             </p>
           </div>

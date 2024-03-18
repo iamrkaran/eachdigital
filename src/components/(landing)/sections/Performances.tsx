@@ -20,20 +20,16 @@ const performanceData = [
 
 const Performances = () => {
 	return (
-		<section className="bg-primary-100 py-16">
-			<div className="container mx-auto">
-				<h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4 ">
-					Performances
-				</h2>
-				<div className="grid w-1/2">
-					<p className="p-4 bg-white rounded-lg shadow-md text-2xl font-semibold mb-2 ">
-						We Want to Support Artists, Creators, and other EACH users as much
-						as possible. We will regularly give chances to be rewarded for
-						showing off what you do.
-					</p>
-				</div>
-			</div>
-		</section>
+		<div className="px-4" data-aos="zoom-in-up">
+			<h2 className="text-3xl font-bold capitalize relative text-[#37517e] text-center">
+				Performances
+			</h2>
+			<p className="text-center p-2 md:p-1 overflow-hidden text-gray-700">
+				We Want to Support Artists, Creators, and other EACH users as much
+				as possible. We will regularly give chances to be rewarded for
+				showing off what you do.
+			</p>
+		</div>
 	);
 };
 

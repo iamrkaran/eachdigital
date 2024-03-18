@@ -145,21 +145,17 @@ const aServiceData = [
 
 const EachforBusiness = () => {
   return (
-    <section className="bg-primary-100 py-16">
-      <div className="container mx-auto">
-      <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">Each for Business</h2>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          {aServiceData.map((service, index) => (
-            <div key={index} className="bg-white rounded-lg shadow-md">
-              <div className="p-4">
-                <h3 className="text-2xl font-semibold mb-2">{service.title}</h3>
-                <p className="text-gray-600">{service.description}</p>
-              </div>
-            </div>
-          ))}
-        </div>
+    <div className="flex-1" data-aos="zoom-in-up">
+      <h2 className="text-3xl font-bold capitalize relative text-[#37517e] text-center">Each for Business</h2>
+      <div className="p-4">
+        {aServiceData.map((service, index) => (
+          <div key={index} className="">
+            <h3 className="overflow-hidden text-gray-600">{service.title}</h3>
+            <p className="text-gray-600">{service.description}</p>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 

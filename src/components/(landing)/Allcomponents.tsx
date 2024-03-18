@@ -30,41 +30,47 @@ import Inbox from "./sections/Inbox";
 const AllComponents = () => {
   return (
     <div>
-      <WhatIsEach />
+      {/* <WhatIsEach /> */}
       {/* <ItsMoreThenYouThink /> */}
 
       <ExtraordinaryProfiles />
       <Notes />
 
-      <ExpansionPacks />
-
       <ControlyourTimeline />
-      <GettheContentyouNeed />
+
+      <div className="bg-[#f3f5fa] flex flex-col md:flex-row p-2 md:p-20 gap-4 py-8">
+        <GettheContentyouNeed />
+        <ExpansionPacks />
+      </div>
 
       <ChatBoxes />
       <Visions />
 
-      <Videos />
-      
-      <Points />
-      <Rewards />
-      <Requests />
+      {/* <Videos /> */}
 
-      <Inbox />
+      <div className="px-6 py-12 my-4 md:p-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+        <Points />
+        <Rewards />
+        <Requests />
+      </div>
+
+      <div className="flex bg-[#f3f5fa] md:flex-row flex-col p-2 md:px-20 md:py-16 py-8 gap-4 justify-around">
+        <Inbox />
+        <Performances />
+        <AlgorithmPower />
+      </div>
       {/* <Stickers /> */}
-
-
       {/* <Adventures /> */}
-      <AlgorithmPower />
-
       {/* <Data /> */}
-      <Performances />
 
       <Games />
+
       <AServicePlatform />
 
-      <EachforKids />
-      <EachforBusiness />
+      <div className="flex bg-[#f3f5fa] md:flex-row flex-col p-2 md:px-20 md:py-16 py-8 gap-4 justify-around">
+        <EachforKids />
+        <EachforBusiness />
+      </div>
     </div>
   );
 };

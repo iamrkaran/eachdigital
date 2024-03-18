@@ -22,6 +22,9 @@ export default function RootLayout({
     <html lang="en">
       <body className={`${inter.variable} font-sans`}>
         <Providers>{children}</Providers>
+        <script>
+          AOS.init();
+        </script>
       </body>
     </html>
   );
