@@ -2,10 +2,10 @@ import React from "react";
 
 const GetTheContentYouNeed = () => {
   return (
-    <section className="container flex-[3]" data-aos="fade-right">
+    <section className="container flex-[3]" data-aos="zoom-in-up">
       <h2 className="text-2xl md:text-3xl lg:text-3xl xl:text-4xl font-bold mb-4 text-[#37517e]">A messenger so good it might just have to be your go-to</h2>
       <div className="px-4">
-          <p className="text-lg text-gray-700">
+          <p className="text-base text-gray-700">
             We&apos;re a friendly network here and the
             perfect Link-in-Bio Elsewhere, yet, at our
             core, we&apos;re a messanger we&apos;d rather use

@@ -4,7 +4,7 @@ import React from "react";
 const Notes = () => {
   return (
     <div className="bg-[#f3f5fa] flex flex-col md:flex-row md:p-20 p-2 gap-8">
-      <div className="md:flex-1 md:order-2 bg-transparent" data-aos="fade-left">
+      <div className="md:flex-1 md:order-2 bg-transparent" data-aos="zoom-in-up">
         <Image
           width={500}
           height={500}
@@ -13,7 +13,7 @@ const Notes = () => {
           className="w-full h-full object-cover bg-transparent rounded-none md:rounded-md"
         />
       </div>
-      <div className="flex-[3] md:order-1 px-4 mb-6" data-aos="fade-right">
+      <div className="flex-[3] md:order-1 px-4 mb-6" data-aos="zoom-in-up">
         <h2 className="text-xl md:text-2xl lg:text-2xl xl:text-3xl font-bold mb-4 text-[#37517e]">You Can Always Each It</h2>
         <p className="text-center p-2 md:p-1 overflow-hidden text-gray-700">
           Post To Your Each Timeline and Prepare For New Levels of Interaction. Users Can Go To Gift You Directly from Your Post,

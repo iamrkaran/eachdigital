@@ -9,7 +9,7 @@ const ControlYourTimeline = () => {
           Control Your Timeline
         </h2>
         <div className="flex flex-col md:flex-row">
-          <div className="md:w-1/2" data-aos="fade-right">
+          <div className="md:w-1/2" data-aos="zoom-in-up">
             <Image
               sizes="100vw"
               width={500}
@@ -19,8 +19,8 @@ const ControlYourTimeline = () => {
               className="w-full h-auto rounded-lg object-cover"
             />
           </div>
-          <div className="md:w-1/2 pl-8 pt-4" data-aos="fade-left">
-            <p className="text-lg text-gray-700">
+          <div className="md:w-1/2 pl-3 md:pl-6 pt-4" data-aos="zoom-in-up">
+            <p className="text-base text-gray-700">
               EACH is free-flow and One-day Endless. Create your network the way
               that you please. Rearrange the sizing of your feeds. Choose what
               you need on your side Bars, and figure out what&apos;s your

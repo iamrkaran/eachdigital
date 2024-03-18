@@ -4,7 +4,7 @@ import React from 'react';
 const EachforKidsPage: React.FC = () => {
 	return (
 		<div className="flex-1" data-aos="zoom-in-up">
-			<h2 className="text-3xl font-bold capitalize relative text-[#37517e] text-center">
+			<h2 className="text-2xl font-bold capitalize relative text-[#37517e] text-center">
 				Each For Kids
 			</h2>
 			<div className="p-4 text-center">

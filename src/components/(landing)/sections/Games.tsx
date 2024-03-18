@@ -27,7 +27,7 @@ const gamesData = [
 const Games = () => {
 	return ( 
 		<div className="py-16">
-			<h2 className="text-4xl underline md:text-4xl lg:text-4xl xl:text-4xl font-extrabold mb-6 text-center text-[#37517e]" data-aos="zoom-in">
+			<h2 className="text-3xl underline md:text-4xl lg:text-4xl xl:text-4xl font-extrabold mb-6 text-center text-[#37517e]" data-aos="zoom-in">
 				Games
 			</h2>
 			<div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-4 md:px-24 px-6">
@@ -41,7 +41,7 @@ const Games = () => {
 							className="w-full h-64 object-cover rounded-t-md"
 						/>
 						<div className="p-4">
-							<h3 className="text-lg text-gray-800 font-semibold mb-2">{game.title}</h3>
+							<h3 className="text-base text-gray-800 font- mb-2">{game.title}</h3>
 							{/* <p className="text-gray-600">{game.description}</p> */}
 						</div>
 					</div>

@@ -30,10 +30,10 @@ const ExtraordinaryProfiles = () => {
 	return (
 		<div className="py-10">
 			<div className='flex flex-col items-center space-y-4 px-5 md:px-10'>
-				<h2 className="text-3xl font-bold capitalize text-[#37517e]" data-aos="fade-up" data-aos-offset="100">
+				<h2 className="md:text-3xl text-xl font-bold capitalize text-[#37517e]" data-aos="zoom-in-up" data-aos-offset="100">
 					Goodbye Outdated Profiles. Our Needs Have Changed.
 				</h2>
-				<p className='items-center w-[90%] text-lg pb-4' data-aos="fade-up" data-aos-offset="100">
+				<p className='items-center w-[90%] pb-4' data-aos="fade-up" data-aos-offset="100">
 					4 Screens, Right, Left, Down, up, Come Together to form One Full Display Ready For All of Your Links, Content, and However You&apos;d Like To Express Yourself. You&apos;ll Also Have Your Posts Below and Space For Our Extensions and Expansion Packs. Show Everything You Got, and Leave the Perfect Spot For Your Friends, Business Partners, and Supporters to Interact and Get To Know You. The Possibilities are Endless. Obtain subscrlbers, and, make your profile private if you please. To see and get Inspired by all of the profiles out there, users get a feed of profiles that they can scroll through and check out. Who knows, maybe you&apos;ll find someone new to support solely off of their style.
 				</p>
 

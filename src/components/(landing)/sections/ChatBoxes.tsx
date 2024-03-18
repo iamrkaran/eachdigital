@@ -9,7 +9,7 @@ const ChatBoxes = () => {
           Chat and Channels
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
-          <div className="bg-white rounded-lg shadow-md" data-aos="fade-right">
+          <div className="bg-white rounded-lg shadow-md" data-aos="zoom-in-up">
             <Image
               sizes="100vw"
               style={{
@@ -23,13 +23,13 @@ const ChatBoxes = () => {
               className="w-full h-auto object-cover rounded-t-lg"
             />
             <div className="p-4">
-              <p className="text-lg text-gray-600">
+              <p className="text-base text-gray-600">
                 Chat with friends and share your latest updates.
               </p>
             </div>
           </div>
  
-          <div className="bg-white rounded-lg shadow-md" data-aos="fade-left">
+          <div className="bg-white rounded-lg shadow-md" data-aos="zoom-in-up">
             <Image
               sizes="100vw"
               style={{
@@ -43,7 +43,7 @@ const ChatBoxes = () => {
               className="w-full h-auto object-cover rounded-t-lg"
             />
             <div className="p-4">
-              <p className="text-lg text-gray-600">
+              <p className="text-base text-gray-600">
                 Stay connected with loved ones wherever you are.
               </p>
             </div>
@@ -60,7 +60,7 @@ const ChatBoxes = () => {
                 className="w-full h-auto object-cover rounded-t-lg"
               />
               <div className="p-4">
-                <p className="text-lg text-gray-600">
+                <p className="text-base text-gray-600">
                   Share moments and experiences in real-time.
                 </p>
               </div>
@@ -76,7 +76,7 @@ const ChatBoxes = () => {
                 className="w-full h-auto object-cover rounded-t-lg"
               />
               <div className="p-4">
-                <p className="text-lg text-gray-600">
+                <p className="text-base text-gray-600">
                   Collaborate with colleagues and discuss projects.
                 </p>
               </div>

@@ -21,10 +21,10 @@ const pointsData = [
 const Points = () => { 
 	return (
 		<div className="rounded-xl bg-white shadow-2xl shadow-slate-500 py-14 px-10" data-aos="zoom-in-up">
-			<h2 className="text-3xl md:text-3xl lg:text-3xl xl:text-3xl font-bold mb-4 text-[#37517e]">
+			<h2 className="text-2xl font-bold mb-4 text-[#37517e]">
 				Points
 			</h2>
-				<p className="text-gray-800 font-semibold mb-2 ">
+				<p className="text-gray-800 mb-2 ">
 					Points Are the Spirit of EACH. They can be received through Dally
 					Log-Ins, completing Request challenges, posting content, daily
 					reward packs, talking with friends, making themes and stickers,

@@ -10,7 +10,7 @@ const videoData = [
 
 const Videos = () => {
   return (
-    <section className="px-1 md:px-8">
+    <div className="px-1 md:px-8">
       {/* <h2 className="text-3xl md:text-4xl lg:text-5xl xl:text-6xl font-extrabold mb-4">Videos</h2> */}
           {videoData.map((video, index) => (
             <div key={index} className="bg-white opacity-100 rounded-lg">
@@ -29,7 +29,7 @@ const Videos = () => {
               </div>
             </div>
           ))}
-    </section>
+    </div>
   );
 };
 

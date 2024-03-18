@@ -21,10 +21,10 @@ const requestsData = [
 const Requests = () => {
 	return (
 		<div className="rounded-xl bg-white shadow-2xl shadow-slate-500 py-14 px-10" data-aos="zoom-in-up">
-			<h2 className="text-3xl md:text-3xl lg:text-3xl xl:text-3xl font-bold mb-4 text-[#37517e]">
+			<h2 className="text-2xl font-bold mb-4 text-[#37517e]">
 				Request
 			</h2>
-			<p className="text-gray-800 font-semibold mb-2 ">
+			<p className="text-gray-800 mb-2 ">
 				Make any type of request you&apos;d Iike to see someone do or perform. If
 				you think they did it right, they can get rewarded. Famour or not,
 				evreyone can benefit by completing these quests. We will even post

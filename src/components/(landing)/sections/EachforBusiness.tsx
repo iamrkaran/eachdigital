@@ -146,7 +146,7 @@ const aServiceData = [
 const EachforBusiness = () => {
   return (
     <div className="flex-1" data-aos="zoom-in-up">
-      <h2 className="text-3xl font-bold capitalize relative text-[#37517e] text-center">Each for Business</h2>
+      <h2 className="text-2xl font-bold capitalize relative text-[#37517e] text-center">Each for Business</h2>
       <div className="p-4">
         {aServiceData.map((service, index) => (
           <div key={index} className="">

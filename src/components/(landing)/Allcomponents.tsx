@@ -46,9 +46,7 @@ const AllComponents = () => {
       <ChatBoxes />
       <Visions />
 
-      {/* <Videos /> */}
-
-      <div className="px-6 py-12 my-4 md:p-12 grid grid-cols-1 md:grid-cols-3 gap-8">
+      <div className="px-4 py-12 md:p-12 grid grid-cols-1 md:grid-cols-3 gap-8">
         <Points />
         <Rewards />
         <Requests />
