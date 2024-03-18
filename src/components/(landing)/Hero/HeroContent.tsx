@@ -57,24 +57,28 @@
 // export default HeroContent;
 
 import React from 'react';
+import WhatIsEach from '../sections/WhatisEach';
 
 type Props = {
-	title: string;
-	description: string;
+  title: string;
+  description: string;
 };
 
 const HeroContent = (props: Props) => {
-	return (
-		<section className="flex justify-center items-center mt-16 h-screen">
-        <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
-          <h1 className="mb-4 text-4xl xl:text-8xl sm:text-3xl font-extrabold tracking-tight leading-none md:text-5xl lg:text-6xl text-black">
-            {props.title}
-          </h1>
+  return (
+    <div className="flex justify-center items-center h-screen">
+      <div className="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16 lg:px-12">
+        <div className="">
+          {/* {props.title} */}
+          <WhatIsEach />
+        </div>
 
-          <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+        <div className="flex flex-col mb-8 lg:mb-16 space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+          <div className='space-x-4 space-y-4'>
             <a
               href="#"
-              className="flex-grow inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-gradient-to-r from-purple-500 to-primary  hover:opacity-70 focus:ring-4 focus:ring-primary-500 shadow-md"
+              className="flex-grow inline-flex gap-2 justify-center items-center py-3 px-5 text-base font-medium rounded-xl border-2 border-solid border-[#47b2e4] bg-gradient-to-r from-purple-500 to-primary hover:bg-gradient-to-l text-white shadow-md"
+              data-aos="fade-right"
             >
               Get started
               <svg
@@ -92,8 +96,10 @@ const HeroContent = (props: Props) => {
             </a>
             <a
               href="#"
-              className="flex-grow inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-gray-900 rounded-lg border border-gray-300 hover:bg-gray-300/70 focus:ring-4 focus:ring-gray-100 dark:text-black dark:border-gray-700 dark:hover:bg-gray-700 dark:focus:ring-gray-800 shadow-md"
+              className="flex-grow inline-flex gap-2 justify-center items-center py-3 px-5 text-base font-medium rounded-xl border-2 border-solid border-[#47b2e4] hover:bg-[#31a9e1] text-white shadow-md"
+              data-aos="fade-left"
             >
+              The Need to Know
               <svg
                 className="mr-2 -ml-1 w-5 h-5"
                 viewBox="0 0 24 24"
@@ -109,13 +115,13 @@ const HeroContent = (props: Props) => {
                   strokeLinejoin="round"
                 ></path>
               </svg>
-              The Need to Know
             </a>
           </div>
         </div>
-      </section>
-    
-	);
+      </div>
+    </div>
+
+  );
 };
 
 export default HeroContent;
